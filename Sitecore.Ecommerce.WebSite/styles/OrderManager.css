@@ -1,0 +1,36 @@
+﻿/*
+  Order State List control styling
+*/
+
+.state-substate .substates {
+  margin-top: 5px;
+}
+
+.state-substate .substates {
+  padding: 3px 5px 3px 3px;
+  background: #f6f6f6;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  float: left;
+  list-style: none;
+  overflow: hidden;
+  display: none;
+  width: 100%;
+}
+
+.substates .active {
+  color: #000000;
+}
+
+.substates .span {
+  color: #777777;
+}
+
+/*
+  Totals
+*/
+
+.right-content span:last-child .field-editor div:last-child div span span, .right-content span:last-child .field-editor .field:last-child .title {
+  font-weight: bold;
+}

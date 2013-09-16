@@ -1,0 +1,59 @@
+﻿.confirmationForm
+{
+  background-color: white;
+}
+.confirmationForm .title
+{
+  float: left;
+  width: 100px;
+}
+
+.confirmationForm .content2 .col .value
+{
+  float: left;
+  width: 190px;
+}
+
+.confirmationForm content2 .title
+{
+  float: left;
+  width: 100px;
+}
+.confirmationForm .colPriceContainer .title
+{
+  width: auto;
+}
+
+.pb_mc
+{
+  width: 680px !important;
+}
+
+
+.pb_mc .content .col
+{
+  float: none;
+  width: 100%;
+}
+
+.content2 .title
+{
+  float: left;
+  width: 100px;
+}
+
+.content2 .col .value
+{
+  float: left;
+  width: 120px;
+}
+
+div.boxShaddow1 dl
+{
+  background: none !important;
+}
+
+div.boxShaddow1
+{
+  background: none !important;
+}

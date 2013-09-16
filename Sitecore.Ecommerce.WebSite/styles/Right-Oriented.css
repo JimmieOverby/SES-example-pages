@@ -1,0 +1,252 @@
+﻿
+/* Form */
+.scfForm
+{
+	font-size:1em;
+	height: 100%;
+	width: 100%;
+	text-align: left;	
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+/* Form Title*/
+.scfTitleBorder
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #000000;
+	font-family: Arial,Tahoma,Helvetica,sans-serif;
+	font-size: 1.8em;
+	line-height: 1.1em;
+	margin: 5px 0pt;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Form Introduction*/
+.scfIntroBorder
+{
+}
+
+/* Form Footer*/
+.scfFooterBorder
+{
+}
+
+/* Submit Button*/
+.scfSubmitButtonBorder
+{
+}
+
+.scfSubmitButton
+{
+}
+
+/* Validation */
+.scfValidationSummary
+{
+}
+
+.scfValidatorRequired,
+.scfRequired
+{
+	margin: 5px;
+	margin-left:10px;
+	float : left;
+}
+
+.scfValidator
+{
+	margin: 0px;
+	display:block;
+}
+
+/* Forms section*/
+.scfSectionBorderAsFieldSet
+{
+	padding: 0 px 15px 15px 15px;
+	border: 0px;
+	border-top: solid 2px;
+	margin:0px 30px;
+}
+
+.scfSectionLegend
+{
+	padding: 7px 13px 8px 13px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.scfSectionBorder
+{
+	margin:0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.scfSectionContent
+{
+	width: 100%;
+	float: left;
+}
+
+.scfSectionUsefulInfo
+{
+	width: 100%;
+	/*padding: 5px 0px 0px 20px;*/
+	vertical-align:top;
+	display:inline;
+}
+
+/* Form fields */
+/* Checkbox */
+
+.scfCheckboxBorder
+{
+	clear:left;
+	text-align: left;
+	display: block;
+	margin: 5px 0px;
+	width: 100%;
+}
+
+.scfCheckbox
+{
+	width: 90%;
+	display: block;
+	padding:0px 3px;	
+}
+
+.scfCheckboxUsefulInfo
+{
+	font-size:0.9em;
+	display: block;
+	width:90%;	
+	padding:0px 6px;
+}
+
+/* Label */
+.scfLabel
+{
+	width: 100%;
+	display: block;
+}
+
+.scfListBoxGeneralPanel,
+.scfDropListGeneralPanel
+{
+	margin: 0px 3px;
+	width: 61%;
+	display: block;
+	float:left;
+}
+
+.scfListBox,
+.scfDropList
+{
+	width:100%;
+	margin:0px;
+	margin-left:3px;
+}
+
+.scfMultipleLineTextBox
+{
+	width:100%;
+	margin:0px;
+}
+
+.scfDropListBorder,
+.scfEmailBorder,
+.scfMultipleLineTextBorder,
+.scfSingleLineTextBorder,
+.scfPasswordBorder,
+.scfNumberBorder,
+.scfDateBorder,
+.scfRadioButtonListBorder,
+.scfListBoxBorder,
+.scfCheckBoxListBorder,
+.scfFileUploadBorder
+{
+	text-align: left;
+	display: block;
+	margin: 5px 0px;
+	width: 100%;
+	vertical-align: top;
+}
+
+.scfDropList,
+.scfEmailTextBox,
+.scfMultipleLineTextBox,
+.scfSingleLineTextBox,
+.scfPasswordTextBox,
+.scfNumberTextBox,
+.scfDateTextBox,
+.scfRadioButtonList,
+.scfCheckBoxList,
+.scfFileUpload
+{
+	width: 100%;
+}
+
+.scfDropListLabel,
+.scfEmailLabel,
+.scfMultipleLineTextLabel,
+.scfSingleLineTextLabel,
+.scfPasswordLabel,
+.scfNumberLabel,
+.scfDateLabel,
+.scfRadioButtonListLabel,
+.scfCheckBoxListLabel,
+.scfListBoxLabel,
+.scfFileUploadLabel,
+.scfDateSelectorLabel
+{
+	padding: 3px 0px;
+	width: 30%;
+	display: block;
+	float: right;
+}
+
+.scfEmailGeneralPanel,
+.scfMultipleLineGeneralPanel,
+.scfSingleLineGeneralPanel,
+.scfPasswordGeneralPanel,
+.scfNumberGeneralPanel,
+.scfDateGeneralPanel,
+.scfRadioButtonListGeneralPanel,
+.scfCheckBoxListGeneralPanel,
+.scfFileUploadGeneralPanel,
+.scfDateSelectorGeneralPanel
+{
+	margin: 0px 3px;
+	width: 60%;
+	display: block;
+	float:left;
+}
+
+.scfDropListUsefulInfo,
+.scfEmailUsefulInfo,
+.scfMultipleLineTextUsefulInfo,
+.scfSingleLineTextUsefulInfo,
+.scfPasswordUsefulInfo,
+.scfNumberUsefulInfo,
+.scfDateUsefulInfo,
+.scfRadioButtonListUsefulInfo,
+.scfListBoxUsefulInfo,
+.scfCheckBoxListUsefulInfo,
+.scfFileUploadUsefulInfo,
+.scfDateSelectorUsefulInfo
+{
+	font-size:0.9em;
+	padding: 2px 0px 0px 2px;
+	display: block;
+	width:100%;	
+}
+
+.scfDateSelectorDay,
+.scfDateSelectorMonth,
+.scfDateSelectorYear
+{
+	width:33%;
+	margin:0px;
+}

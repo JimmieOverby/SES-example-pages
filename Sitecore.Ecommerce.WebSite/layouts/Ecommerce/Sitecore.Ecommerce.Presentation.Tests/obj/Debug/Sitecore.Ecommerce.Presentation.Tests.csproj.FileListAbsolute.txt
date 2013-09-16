@@ -1,0 +1,1 @@
+D:\Projects\CMS\Modules\e-Commerce\dev\code\Sitecore.Ecommerce.WebSite\layouts\Ecommerce\Sitecore.Ecommerce.Presentation.Tests\obj\Debug\Sitecore.Ecommerce.Presentation.Tests.csprojResolveAssemblyReference.cache

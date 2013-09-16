@@ -1,0 +1,38 @@
+/* Search Page CSS Document */
+
+#pb_search ul {
+	margin: 0;
+	padding: 0;
+}
+
+#pb_search ul li {
+	clear: none;
+	float: left;
+	line-height: 22px;
+	list-style: none;
+	font-size: 11px;
+	margin: 0;
+	padding: 0 5px 0 0;
+}
+
+#pb_search ul li input {
+	width: 330px;
+}
+
+ul.search_results {
+	clear: both;
+	margin: 20px 0;
+	padding: 0;
+}
+
+ul.search_results li {
+	background: url(../images/backgrounds/accessory_100.jpg) bottom left no-repeat;
+	list-style: none;
+	margin: 0;
+	padding: 20px 15px 10px 15px;
+}
+
+ul.search_results li p {
+	margin: 0;
+	font-style: italic;
+}

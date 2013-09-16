@@ -1,0 +1,23 @@
+/* CSS Document for the Index */
+
+#page_container.home_page {
+	background-image: url(../images/backgrounds/index_top_b_50.jpg) !important;
+}
+
+
+#page_container.home_page #pb_content_primary {
+	margin-bottom: 0 !important;
+}
+
+
+#key_image {
+	height: 292px;
+}
+
+#index_modules {
+	margin: 6px 0 0 6px;
+}
+
+#index_modules div.module {
+	padding-right: 1px;
+}

@@ -1,0 +1,20 @@
+﻿.halfAvailableWidth
+{
+	float:left;	
+	text-align: left;
+	display: inline;
+	margin: 5px 0px;
+	width: 50%;
+	vertical-align: top;
+}
+
+.thirdAvailableWidth
+{
+	float:left;	
+	text-align: left;
+	display: inline;
+	margin: 5px 0px;
+	width: 33%;
+	vertical-align: top;
+}
+

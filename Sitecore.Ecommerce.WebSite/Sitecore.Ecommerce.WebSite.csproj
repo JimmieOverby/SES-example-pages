@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1146F41-E875-492B-BA0E-722CE4A91FCD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.Ecommerce</RootNamespace>
+    <AssemblyName>Sitecore.Ecommerce.WebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\Sitecore\</SolutionDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Amazon.CBUI, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Amazon.CBUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Amazon.FPS, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Amazon.FPS.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.3.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\Resources\Lucene.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Sitecore\packages\Unity.2.0\lib\20\Microsoft.Practices.Unity.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Sitecore\packages\Unity.2.0\lib\20\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Sitecore\packages\Unity.2.0\lib\20\Microsoft.Practices.Unity.Interception.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Sitecore\packages\Unity.2.0\lib\20\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="RadSpell.Net2, Version=3.2.0.0, Culture=neutral, PublicKeyToken=b5dad7bf2bf594c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\RadSpell.Net2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Sitecore.Analytics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Client, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Sitecore.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Forms.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Sitecore.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Forms.Custom, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Sitecore.Forms.Custom.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Sitecore.Kernel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Logging, Version=1.2.0.30715, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Sitecore.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="sitecore.nexus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\sitecore.nexus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\backgrounds\accessory_100.jpg" />
+    <Content Include="images\backgrounds\body_bottom.gif" />
+    <Content Include="images\backgrounds\fieldset_large_100.jpg" />
+    <Content Include="images\backgrounds\fieldset_large_70.jpg" />
+    <Content Include="images\backgrounds\fieldset_left_small_100.jpg" />
+    <Content Include="images\backgrounds\fieldset_left_small_70.jpg" />
+    <Content Include="images\backgrounds\fieldset_right_small_100.jpg" />
+    <Content Include="images\backgrounds\fieldset_right_small_70.jpg" />
+    <Content Include="images\backgrounds\footer.gif" />
+    <Content Include="images\backgrounds\index_top_100.jpg" />
+    <Content Include="images\backgrounds\index_top_50.jpg" />
+    <Content Include="images\backgrounds\index_top_70.jpg" />
+    <Content Include="images\backgrounds\left_menu.gif" />
+    <Content Include="images\backgrounds\left_menu_bg.gif" />
+    <Content Include="images\backgrounds\left_nav.gif" />
+    <Content Include="images\backgrounds\login_field.gif" />
+    <Content Include="images\backgrounds\main_h_tile.gif" />
+    <Content Include="images\backgrounds\main_top_100.jpg" />
+    <Content Include="images\backgrounds\main_top_50.jpg" />
+    <Content Include="images\backgrounds\main_top_70.jpg" />
+    <Content Include="images\backgrounds\module_bottom.gif" />
+    <Content Include="images\backgrounds\module_red_bottom.gif" />
+    <Content Include="images\backgrounds\module_red_tile.gif" />
+    <Content Include="images\backgrounds\module_red_top_100.jpg" />
+    <Content Include="images\backgrounds\module_red_top_50.jpg" />
+    <Content Include="images\backgrounds\module_red_top_70.jpg" />
+    <Content Include="images\backgrounds\module_shiny_dark_grey_bottom.gif" />
+    <Content Include="images\backgrounds\module_shiny_dark_grey_tile.gif" />
+    <Content Include="images\backgrounds\module_shiny_dark_grey_top_100.jpg" />
+    <Content Include="images\backgrounds\module_shiny_dark_grey_top_50.jpg" />
+    <Content Include="images\backgrounds\module_shiny_dark_grey_top_70.jpg" />
+    <Content Include="images\backgrounds\module_shiny_grey_bottom.gif" />
+    <Content Include="images\backgrounds\module_shiny_grey_tile.gif" />
+    <Content Include="images\backgrounds\module_shiny_grey_top_100.jpg" />
+    <Content Include="images\backgrounds\module_shiny_grey_top_50.jpg" />
+    <Content Include="images\backgrounds\module_shiny_grey_top_70.jpg" />
+    <Content Include="images\backgrounds\module_tile.gif" />
+    <Content Include="images\backgrounds\module_top.gif" />
+    <Content Include="images\backgrounds\odd_row.gif" />
+    <Content Include="images\backgrounds\page_h_tile.gif" />
+    <Content Include="images\backgrounds\page_rating.gif" />
+    <Content Include="images\backgrounds\page_tile.gif" />
+    <Content Include="images\backgrounds\page_v_tile.gif" />
+    <Content Include="images\backgrounds\search.gif" />
+    <Content Include="images\backgrounds\tab_bar.gif" />
+    <Content Include="images\ecommerce\box_shaddow_bottom_left.png" />
+    <Content Include="images\ecommerce\box_shaddow_bottom_right.png" />
+    <Content Include="images\ecommerce\box_shaddow_top_left2.jpg" />
+    <Content Include="images\ecommerce\box_shaddow_top_right2.jpg" />
+    <Content Include="images\ecommerce\btn-checkout-wizard.gif" />
+    <Content Include="images\ecommerce\btn_red_large.png" />
+    <Content Include="images\ecommerce\btn_red_large_dis.png" />
+    <Content Include="images\ecommerce\btn_red_medium.png" />
+    <Content Include="images\ecommerce\btn_red_small.png" />
+    <Content Include="images\ecommerce\btn_green_large.png" />
+    <Content Include="images\ecommerce\delete2.png" />
+    <Content Include="images\ecommerce\delete3.png" />
+    <Content Include="images\ecommerce\help2.png" />
+    <Content Include="images\ecommerce\tab.gif" />
+    <Content Include="layouts\Ecommerce\Demo\PageMain.aspx" />
+    <Content Include="sitecore modules\Web\Web Forms for Marketers\Control\SitecoreSimpleFormAscx.ascx" />
+    <Content Include="sitecore\admin\ConvertOrders.aspx" />
+    <Content Include="sitecore\admin\tests\paymentstest.aspx" />
+    <Content Include="sitecore\admin\tests\Products\ProductSpecification.aspx" />
+    <Content Include="layouts\Ecommerce\Examples\Search.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\SearchResult.ascx" />
+    <Content Include="layouts\Ecommerce\Demo\ThreeColumnContent.ascx" />
+    <Content Include="sitecore\admin\ConvertPrices.aspx" />
+    <Content Include="sitecore\shell\Override\RebuildSearchIndex.xml" />
+    <Content Include="styles\common.css" />
+    <Content Include="styles\index.css" />
+    <Content Include="styles\OrderManager.css" />
+    <Content Include="styles\product_page.css" />
+    <Content Include="styles\register.css" />
+    <Content Include="styles\search.css" />
+    <Content Include="xsl\Ecommerce\Examples\ProductInfo.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\SimpleText.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="layouts\Ecommerce\Examples\Ajax.asmx.cs">
+      <DependentUpon>Ajax.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutConfirmation.ascx.cs">
+      <DependentUpon>CheckOutConfirmation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutConfirmation.ascx.designer.cs">
+      <DependentUpon>CheckOutConfirmation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutConfirmationMail.ascx.cs">
+      <DependentUpon>CheckOutConfirmationMail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutConfirmationMail.ascx.designer.cs">
+      <DependentUpon>CheckOutConfirmationMail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckoutHeader.ascx.cs">
+      <DependentUpon>CheckoutHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckoutHeader.ascx.designer.cs">
+      <DependentUpon>CheckoutHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckoutPayment.ascx.cs">
+      <DependentUpon>CheckoutPayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckoutPayment.ascx.designer.cs">
+      <DependentUpon>CheckoutPayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutPaymentErrorPage.ascx.cs">
+      <DependentUpon>CheckOutPaymentErrorPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutPaymentErrorPage.ascx.designer.cs">
+      <DependentUpon>CheckOutPaymentErrorPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutPaymentReturnPage.ascx.cs">
+      <DependentUpon>CheckOutPaymentReturnPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutPaymentReturnPage.ascx.designer.cs">
+      <DependentUpon>CheckOutPaymentReturnPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CreateAccount.ascx.cs">
+      <DependentUpon>CreateAccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\CreateAccount.ascx.designer.cs">
+      <DependentUpon>CreateAccount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\Delivery.ascx.cs">
+      <DependentUpon>Delivery.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\Delivery.ascx.designer.cs">
+      <DependentUpon>Delivery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\DropDownList.cs" />
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\LoginPanel.ascx.cs">
+      <DependentUpon>LoginPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\LoginPanel.ascx.designer.cs">
+      <DependentUpon>LoginPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\PageMain.aspx.cs">
+      <DependentUpon>PageMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\PageMain.aspx.designer.cs">
+      <DependentUpon>PageMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\OrderDisplayMode.cs" />
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCart.ascx.cs">
+      <DependentUpon>ShoppingCart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCart.ascx.designer.cs">
+      <DependentUpon>ShoppingCart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCartAndOrderView.ascx.cs">
+      <DependentUpon>ShoppingCartAndOrderView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCartAndOrderView.ascx.designer.cs">
+      <DependentUpon>ShoppingCartAndOrderView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCartAndOrderViewMail.ascx.cs">
+      <DependentUpon>ShoppingCartAndOrderViewMail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCartAndOrderViewMail.ascx.designer.cs">
+      <DependentUpon>ShoppingCartAndOrderViewMail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCartSummary.ascx.cs">
+      <DependentUpon>ShoppingCartSummary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCartSummary.ascx.designer.cs">
+      <DependentUpon>ShoppingCartSummary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ProductsListView.ascx.cs">
+      <DependentUpon>ProductsListView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ProductsListView.ascx.designer.cs">
+      <DependentUpon>ProductsListView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\ShoppingCartWebHelper.cs" />
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ThreeColumnContent.ascx.cs">
+      <DependentUpon>ThreeColumnContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Check Out Process\ThreeColumnContent.ascx.designer.cs">
+      <DependentUpon>ThreeColumnContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Demo\PageMainMail.aspx.cs">
+      <DependentUpon>PageMainMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Demo\PageMainMail.aspx.designer.cs">
+      <DependentUpon>PageMainMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\OrderHistory.ascx.cs">
+      <DependentUpon>OrderHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\OrderHistory.ascx.designer.cs">
+      <DependentUpon>OrderHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\LayoutSections.ascx.cs">
+      <DependentUpon>LayoutSections.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\LayoutSections.ascx.designer.cs">
+      <DependentUpon>LayoutSections.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Demo\PbMcContainer.ascx.cs">
+      <DependentUpon>PbMcContainer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Demo\PbMcContainer.ascx.designer.cs">
+      <DependentUpon>PbMcContainer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\ShoppingCartSpot.ascx.cs">
+      <DependentUpon>ShoppingCartSpot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\ShoppingCartSpot.ascx.designer.cs">
+      <DependentUpon>ShoppingCartSpot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Demo\PageMain.aspx.cs">
+      <DependentUpon>PageMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Demo\PageMain.aspx.designer.cs">
+      <DependentUpon>PageMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Product.ascx.cs">
+      <DependentUpon>Product.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Product.ascx.designer.cs">
+      <DependentUpon>Product.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Search.ascx.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\Search.ascx.designer.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\SearchResult.ascx.cs">
+      <DependentUpon>SearchResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Examples\SearchResult.ascx.designer.cs">
+      <DependentUpon>SearchResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Demo\ThreeColumnContent.ascx.cs">
+      <DependentUpon>ThreeColumnContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\Demo\ThreeColumnContent.ascx.designer.cs">
+      <DependentUpon>ThreeColumnContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\SampleLayoutPrint.aspx.cs">
+      <DependentUpon>SampleLayoutPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Ecommerce\SampleLayoutPrint.aspx.designer.cs">
+      <DependentUpon>SampleLayoutPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\Sitecore\AssemblyVersionInfo.cs">
+      <Link>Properties\AssemblyVersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Sitecore\CompanyInfo.cs">
+      <Link>Properties\CompanyInfo.cs</Link>
+    </Compile>
+    <Compile Include="sitecore modules\Web\Ecommerce\UI\Controls\InfoField.cs" />
+    <Compile Include="sitecore modules\Web\Ecommerce\UI\Adapters\ValidateControlAdapter.cs" />
+    <Compile Include="sitecore modules\Web\Web Forms for Marketers\Control\SitecoreSimpleFormAscx.ascx.cs">
+      <DependentUpon>SitecoreSimpleFormAscx.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sitecore modules\Web\Web Forms for Marketers\Control\SitecoreSimpleFormAscx.ascx.designer.cs">
+      <DependentUpon>SitecoreSimpleFormAscx.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="sitecore\admin\tests\IntegrationalPayment\CreditCard.aspx.cs">
+      <DependentUpon>CreditCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sitecore\admin\tests\IntegrationalPayment\CreditCard.aspx.designer.cs">
+      <DependentUpon>CreditCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitecore\admin\tests\IntegrationalPayment\UserInfo.aspx.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sitecore\admin\tests\IntegrationalPayment\UserInfo.aspx.designer.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitecore\admin\tests\SslHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\ConnectionStrings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Browsers\Form.browser" />
+    <Content Include="App_Config\Include\Serialization.config" />
+    <Content Include="App_Config\Include\Sitecore.Ecommerce.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Config\Unity.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="images\backgrounds\content_v_tile.gif" />
+    <Content Include="images\backgrounds\head_full_width.jpg" />
+    <Content Include="images\backgrounds\index_top_b_100.jpg" />
+    <Content Include="images\backgrounds\index_top_b_50.jpg" />
+    <Content Include="images\backgrounds\index_top_b_70.jpg" />
+    <Content Include="images\backgrounds\main_top_b_100.jpg" />
+    <Content Include="images\backgrounds\main_top_b_50.jpg" />
+    <Content Include="images\backgrounds\main_top_b_70.jpg" />
+    <Content Include="images\ecommerce\bg_error_summary.gif" />
+    <Content Include="images\ecommerce\bg_fieldset.gif" />
+    <Content Include="images\ecommerce\bg_fieldset_30.gif" />
+    <Content Include="images\ecommerce\bg_header_h1.jpg" />
+    <Content Include="images\ecommerce\bg_pager.gif" />
+    <Content Include="images\ecommerce\body_bottom.gif" />
+    <Content Include="images\ecommerce\box_shaddow_bottom_left.jpg" />
+    <Content Include="images\ecommerce\box_shaddow_bottom_right.jpg" />
+    <Content Include="images\ecommerce\box_shaddow_top_left.jpg" />
+    <Content Include="images\ecommerce\box_shaddow_top_right.jpg" />
+    <Content Include="images\ecommerce\btn_delete.gif" />
+    <Content Include="images\ecommerce\btn_delete_small.gif" />
+    <Content Include="images\ecommerce\btn_next.gif" />
+    <Content Include="images\ecommerce\btn_prev.gif" />
+    <Content Include="images\ecommerce\flag_english.gif" />
+    <Content Include="images\ecommerce\flag_danish.gif" />
+    <Content Include="images\ecommerce\head_full_width.gif" />
+    <Content Include="images\ecommerce\ico-error.gif" />
+    <Content Include="images\ecommerce\ico_basket_small.gif" />
+    <Content Include="images\ecommerce\ico_fedex.gif" />
+    <Content Include="images\ecommerce\ico_key.gif" />
+    <Content Include="images\ecommerce\ico_posten_norge.gif" />
+    <Content Include="images\ecommerce\ico_post_denmark.gif" />
+    <Content Include="images\ecommerce\ico_tnt.gif" />
+    <Content Include="images\ecommerce\ico_ups.gif" />
+    <Content Include="images\ecommerce\ico_usps.gif" />
+    <Content Include="images\ecommerce\lc_menu_bullet.gif" />
+    <Content Include="images\ecommerce\lc_menu_toplevel.gif" />
+    <Content Include="images\ecommerce\lc_menu_toplevel_current.gif" />
+    <Content Include="images\ecommerce\primary_menu_hover_left.gif" />
+    <Content Include="images\ecommerce\primary_menu_hover_left2.gif" />
+    <Content Include="images\ecommerce\primary_menu_hover_right.gif" />
+    <Content Include="images\ecommerce\primary_menu_hover_right2.gif" />
+    <Content Include="images\ecommerce\primary_menu_left.gif" />
+    <Content Include="images\ecommerce\primary_menu_left2.gif" />
+    <Content Include="images\ecommerce\primary_menu_right.gif" />
+    <Content Include="images\ecommerce\primary_menu_right2.gif" />
+    <Content Include="images\ecommerce\rc_basket_bottom.gif" />
+    <Content Include="images\ecommerce\rc_basket_dd.gif" />
+    <Content Include="images\ecommerce\two_colored_spacer.gif" />
+    <Content Include="images\lightbox\lightbox-blank.gif" />
+    <Content Include="images\lightbox\lightbox-btn-close.gif" />
+    <Content Include="images\lightbox\lightbox-btn-next.gif" />
+    <Content Include="images\lightbox\lightbox-btn-prev.gif" />
+    <Content Include="images\lightbox\lightbox-ico-loading.gif" />
+    <Content Include="jscript\Ecommerce\functions.js" />
+    <Content Include="jscript\Ecommerce\ecommerce.js" />
+    <Content Include="jscript\expressInstall.swf" />
+    <Content Include="jscript\jquery-1.3.2.min.js" />
+    <Content Include="jscript\jquery.lightbox-0.5.min.js" />
+    <Content Include="jscript\product.js" />
+    <Content Include="jscript\swfobject.js" />
+    <Content Include="layouts\Ecommerce\Examples\Ajax.asmx" />
+    <Content Include="layouts\Ecommerce\Demo\PageMainMail.aspx" />
+    <Content Include="layouts\Ecommerce\Examples\OrderHistory.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\LayoutSections.ascx" />
+    <Content Include="layouts\Ecommerce\Demo\PbMcContainer.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\ShoppingCartSpot.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Product.ascx" />
+    <Content Include="styles\Custom.css" />
+    <Content Include="styles\Default.css" />
+    <Content Include="styles\ecommerce_common.css" />
+    <Content Include="styles\ecommerce_forms.css" />
+    <Content Include="styles\jquery.lightbox-0.5.css" />
+    <Content Include="styles\Left-Oriented.css" />
+    <Content Include="styles\Right-Oriented.css" />
+    <Content Include="styles\Top-Oriented.css" />
+    <Content Include="xsl\Ecommerce\Examples\Global.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Banner.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Column.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Flash Banner.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Global Variables.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Rotating Banner.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Rotator Spot.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Four Column.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Rich Text.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Rotating Flash Banner.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Three Column.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Two Column Rotator.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Layout Sections\Two Column.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Product Boxes and Catalog.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\ProductVariantSelector.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\Title.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\LayoutSections.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\TitleAndShortDescription.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\pager.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\ProductTabSpecifications.xslt" />
+    <Content Include="xsl\Ecommerce\Examples\ProductTabAccessories.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Analytics\Sitecore.Ecommerce.Analytics.csproj">
+      <Project>{650995B2-04EB-4B5F-860D-16DBFEFAE9C6}</Project>
+      <Name>Sitecore.Ecommerce.Analytics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Apps\Sitecore.Ecommerce.Apps.csproj">
+      <Project>{BA534F05-D14E-490B-AC3D-1FA3809ABB40}</Project>
+      <Name>Sitecore.Ecommerce.Apps</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Core\Sitecore.Ecommerce.Core.csproj">
+      <Project>{F76CB1D3-5DFA-487B-B6B2-02DC614AC781}</Project>
+      <Name>Sitecore.Ecommerce.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Data\Sitecore.Ecommerce.Data.csproj">
+      <Project>{A52895E7-E0B2-48B1-A5C6-FCB17F684CE8}</Project>
+      <Name>Sitecore.Ecommerce.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.DomainModel\Sitecore.Ecommerce.DomainModel.csproj">
+      <Project>{40952670-D53D-44D8-B855-F84881D4F7B0}</Project>
+      <Name>Sitecore.Ecommerce.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Forms\Sitecore.Ecommerce.Forms.csproj">
+      <Project>{78938398-E435-4A5F-8101-FB291958A5DA}</Project>
+      <Name>Sitecore.Ecommerce.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Kernel\Sitecore.Ecommerce.Kernel.csproj">
+      <Project>{9C45A6F1-560E-4688-BEC7-3E2F927CFF9A}</Project>
+      <Name>Sitecore.Ecommerce.Kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.Amazon\Sitecore.Ecommerce.Payments.Amazon.csproj">
+      <Project>{16F0DFE8-8FA8-489A-A3F5-A50D075CA58B}</Project>
+      <Name>Sitecore.Ecommerce.Payments.Amazon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.AuthorizeNet\Sitecore.Ecommerce.Payments.AuthorizeNet.csproj">
+      <Project>{6A777C3A-5C34-4AB7-BD48-2D17E7C89944}</Project>
+      <Name>Sitecore.Ecommerce.Payments.AuthorizeNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.Bbs\Sitecore.Ecommerce.Payments.Bbs.csproj">
+      <Project>{C2118274-39C5-425C-B51B-CE567DDEB1CF}</Project>
+      <Name>Sitecore.Ecommerce.Payments.Bbs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.Dibs\Sitecore.Ecommerce.Payments.Dibs.csproj">
+      <Project>{9DC6D07F-7A2E-4161-9539-961371A969F1}</Project>
+      <Name>Sitecore.Ecommerce.Payments.Dibs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.EPay\Sitecore.Ecommerce.Payments.EPay.csproj">
+      <Project>{36B8BC9E-0F7E-4430-AEC7-00B54E937D71}</Project>
+      <Name>Sitecore.Ecommerce.Payments.EPay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.PayEx\Sitecore.Ecommerce.Payments.PayEx.csproj">
+      <Project>{770CE443-D6A5-466C-8ADE-74A922435621}</Project>
+      <Name>Sitecore.Ecommerce.Payments.PayEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.PayPal\Sitecore.Ecommerce.Payments.PayPal.csproj">
+      <Project>{7986F255-BE77-4862-AA2C-95E0C5B98926}</Project>
+      <Name>Sitecore.Ecommerce.Payments.PayPal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.QuickPay\Sitecore.Ecommerce.Payments.QuickPay.csproj">
+      <Project>{17C187C7-09A9-41D7-8C50-68F4D746B49D}</Project>
+      <Name>Sitecore.Ecommerce.Payments.QuickPay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.ServiceModel\Sitecore.Ecommerce.ServiceModel.csproj">
+      <Project>{E21EC10B-0C3D-4D7B-83F8-71225E5195DB}</Project>
+      <Name>Sitecore.Ecommerce.ServiceModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Custom\Sitecore.Ecommerce.Custom.csproj">
+      <Project>{BECFB78A-9A2A-41B0-8FA4-BA39DE834A54}</Project>
+      <Name>Sitecore.Ecommerce.Custom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Shell\Sitecore.Ecommerce.Shell.csproj">
+      <Project>{8828062B-00F9-4EFC-A40B-36A8E12E9F11}</Project>
+      <Name>Sitecore.Ecommerce.Shell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Specs\Sitecore.Ecommerce.Specs.csproj">
+      <Project>{e98984a7-5d42-49fe-89cd-abd98d5aaa7f}</Project>
+      <Name>Sitecore.Ecommerce.Specs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Tests.Distributed\Sitecore.Ecommerce.Tests.Distributed.csproj">
+      <Project>{4B48E107-8B6C-4432-B0CF-EA148BEDE6F7}</Project>
+      <Name>Sitecore.Ecommerce.Tests.Distributed</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Tests.Integration\Sitecore.Ecommerce.Tests.Integration.csproj">
+      <Project>{5DB94714-3B53-4842-9410-680F256CC465}</Project>
+      <Name>Sitecore.Ecommerce.Tests.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.UITests\Sitecore.Ecommerce.UITests.csproj">
+      <Project>{53BE82EA-0D65-4B80-9742-09552A6D1F0F}</Project>
+      <Name>Sitecore.Ecommerce.UITests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Visitor\Sitecore.Ecommerce.Visitor.csproj">
+      <Project>{4DF44E9C-B080-4670-B471-BC44648651A7}</Project>
+      <Name>Sitecore.Ecommerce.Visitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="layouts\Ecommerce\Sitecore.Ecommerce.Presentation.Tests\Sitecore.Ecommerce.Presentation.Tests.csproj">
+      <Project>{6C922B95-A5AC-40D5-A83F-827B0FC75554}</Project>
+      <Name>Sitecore.Ecommerce.Presentation.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="sitecore modules\Shell\Ecommerce\Services\Sitecore.Ecommerce.Services.csproj">
+      <Project>{FE3E54B5-57EB-42A1-9A5E-7CB4B933ED84}</Project>
+      <Name>Sitecore.Ecommerce.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="sitecore modules\Shell\Ecommerce\TServices\Sitecore.Ecommerce.Tests.QA.csproj">
+      <Project>{8EC7AB76-92EE-4335-A78A-DDDB164419A0}</Project>
+      <Name>Sitecore.Ecommerce.Tests.QA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Sitecore.Ecommerce.Examples.config" />
+    <Content Include="App_Config\Include\Sitecore.Ecommerce.Testing.config" />
+    <Content Include="App_Config\Include\Sitecore.Ecommerce.Apps.OrderManagement.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Config\Sitecore.Ecommerce.Examples.Unity.config" />
+    <None Include="Properties\DataSources\Sitecore.Ecommerce.DomainModel.Orders.Order.datasource" />
+    <Content Include="jscript\RadioButtonGroup.js" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutConfirmation.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutConfirmationMail.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\CheckoutHeader.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\CheckoutPayment.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutPaymentErrorPage.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\CheckOutPaymentReturnPage.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\SingleFormContent.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\CreateAccount.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\css\print.css" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\Delivery.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\jscripts\CheckOut.js" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\LoginPanel.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\PageMain.aspx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCart.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCartAndOrderView.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCartAndOrderViewMail.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCartSummary.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\ProductsListView.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\ShoppingCartViewMail.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\ThreeColumnContent.ascx" />
+    <Content Include="layouts\Ecommerce\Examples\Check Out Process\TwoFormsContent.ascx" />
+    <Content Include="layouts\Ecommerce\SampleLayoutPrint.aspx" />
+    <Content Include="sitecore\admin\tests\IntegrationalPayment\CreditCard.aspx" />
+    <Content Include="sitecore\admin\tests\IntegrationalPayment\UserInfo.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="xsl\Ecommerce\Examples\Check Out Process\CheckOutProcessHeader.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+</Project>

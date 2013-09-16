@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/" xmlns:set="http://www.sitecore.net/xmlconfig/set/">
+  <sitecore>
+    <sites>
+      <site name="shell" set:content="web" />
+      <site name="modules_shell" set:content="web" />
+      <site name="testing">
+        <patch:delete />
+      </site>
+    </sites>
+    <IDTable>
+      <param connectionStringName="master" set:connectionStringName="web" />
+    </IDTable>
+    <databases>
+      <database id="master">
+        <patch:delete />
+      </database>
+    </databases>
+    <search>
+      <configuration>
+        <indexes>
+          <index> 
+            <locations>
+              <master>
+                <patch:delete />
+              </master>
+            </locations>
+          </index>
+          <index id="products" type="Sitecore.Search.Index, Sitecore.Kernel">
+            <locations hint="list:AddCrawler">
+              <master type="Sitecore.Ecommerce.Search.DatabaseCrawler, Sitecore.Ecommerce.Kernel">
+                <patch:delete />
+              </master>
+            </locations>
+          </index>
+        </indexes>
+      </configuration>
+    </search> 
+    <scheduling>
+      <agent type="Sitecore.Tasks.CleanupFDAObsoleteMediaData">
+        <databases hint="raw:AddDatabase">
+          <database name="master">
+            <patch:delete />
+          </database>
+        </databases>
+      </agent>
+      <agent type="Sitecore.Tasks.DatabaseAgent">
+         <patch:delete />
+      </agent>
+      <agent type="Sitecore.Tasks.DatabaseAgent">
+         <patch:delete />
+      </agent>
+      <agent type="Sitecore.Tasks.DatabaseAgent" method="Run" interval="00:10:00">
+        <param desc="database">core</param>
+        <param desc="schedule root">/sitecore/system/tasks/schedules</param>
+        <LogActivity>true</LogActivity>
+      </agent>
+      <agent type="Sitecore.Tasks.PublishAgent" method="Run" interval="00:00:00">
+        <patch:delete />
+      </agent>
+      <agent type="Sitecore.Analytics.Tasks.EmailReportsTask, Sitecore.Analytics" method="Run" interval="1:00:00">
+        <DatabaseName>web</DatabaseName>
+      </agent>
+    </scheduling>
+    <settings>
+      <setting name="WFM.MasterDatabase" set:value="web"/>
+      <setting name="Analytics.DefaultDefinitionDatabase" set:value="web" />
+    </settings>
+    <sites>
+      <site name="example" set:content="web" />
+    </sites>
+  </sitecore>
+</configuration>

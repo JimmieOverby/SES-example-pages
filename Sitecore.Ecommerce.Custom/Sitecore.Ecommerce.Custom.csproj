@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BECFB78A-9A2A-41B0-8FA4-BA39DE834A54}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.Ecommerce</RootNamespace>
+    <AssemblyName>Sitecore.Ecommerce.Custom</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\Sitecore\</SolutionDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\Resources\Lucene.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Sitecore\packages\Unity.2.0\lib\20\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="RadSpell.Net2, Version=3.2.0.0, Culture=neutral, PublicKeyToken=b5dad7bf2bf594c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\RadSpell.Net2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Forms.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Sitecore.Forms.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Forms.Custom, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Sitecore.Forms.Custom.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Resources\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Examples\Orders\MyCustomerInfo.cs" />
+    <Compile Include="Examples\Orders\MyOrder.cs" />
+    <Compile Include="Examples\Orders\MyOrderDtoConvertor.cs" />
+    <Compile Include="Examples\Orders\MyOrderMappingRule.cs" />
+    <Compile Include="Examples\Orders\MyShoppingCart.cs" />
+    <Compile Include="Examples\Orders\MyShoppingCartDtoConvertor.cs" />
+    <Compile Include="Examples\Products\OtherAccessory.cs" />
+    <Compile Include="Examples\Products\PsCamera.cs" />
+    <Compile Include="Examples\Products\Flash.cs" />
+    <Compile Include="Examples\Products\Lense.cs" />
+    <Compile Include="Examples\Products\SlrCamera.cs" />
+    <Compile Include="Examples\Texts.cs" />
+    <Compile Include="Examples\Reports\OrderReportModelExtended.cs" />
+    <Compile Include="Search\LuceneSearcher.cs" />
+    <Compile Include="Form\Action\ActionHelper.cs" />
+    <Compile Include="Form\Action\ChangePassword.cs" />
+    <Compile Include="Form\Action\CreateNewAccount.cs" />
+    <Compile Include="Form\Action\CustomerDetails.cs" />
+    <Compile Include="Form\Action\EditAccount.cs" />
+    <Compile Include="Form\Action\LogIn.cs" />
+    <Compile Include="Form\Action\NewPassword.cs" />
+    <Compile Include="Form\Action\ResetPassword.cs" />
+    <Compile Include="Form\Validators\NotUsedUserNameValidator.cs" />
+    <Compile Include="Form\Validators\PasswordValidator.cs" />
+    <Compile Include="Form\Validators\UserNameValidator.cs" />
+    <Compile Include="Classes\Validators\FieldValidators\TwoSpellingMisprints.cs" />
+    <Compile Include="Classes\NicamHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\XslExtensions.cs" />
+    <Compile Include="..\Sitecore\AssemblyVersionInfo.cs">
+      <Link>Properties\AssemblyVersionInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Sitecore\CompanyInfo.cs">
+      <Link>Properties\CompanyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Search\SearchContext.cs" />
+    <Compile Include="Search\SearchResult.cs" />
+    <Compile Include="Search\SearchResultController.cs" />
+    <Compile Include="Search\SearchResultElement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Analytics\Sitecore.Ecommerce.Analytics.csproj">
+      <Project>{650995B2-04EB-4B5F-860D-16DBFEFAE9C6}</Project>
+      <Name>Sitecore.Ecommerce.Analytics</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Core\Sitecore.Ecommerce.Core.csproj">
+      <Project>{f76cb1d3-5dfa-487b-b6b2-02dc614ac781}</Project>
+      <Name>Sitecore.Ecommerce.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.DomainModel\Sitecore.Ecommerce.DomainModel.csproj">
+      <Project>{40952670-D53D-44D8-B855-F84881D4F7B0}</Project>
+      <Name>Sitecore.Ecommerce.DomainModel</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Forms\Sitecore.Ecommerce.Forms.csproj">
+      <Project>{78938398-E435-4A5F-8101-FB291958A5DA}</Project>
+      <Name>Sitecore.Ecommerce.Forms</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sitecore.Ecommerce.Kernel\Sitecore.Ecommerce.Kernel.csproj">
+      <Project>{9C45A6F1-560E-4688-BEC7-3E2F927CFF9A}</Project>
+      <Name>Sitecore.Ecommerce.Kernel</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

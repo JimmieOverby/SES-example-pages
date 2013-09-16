@@ -1,0 +1,752 @@
+﻿<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Sitecore E-Commerce Services</PackageName>
+      <Author>Sitecore Corporation</Author>
+      <Version />
+      <Revision />
+      <License>&lt;p style="TEXT-ALIGN: center; MARGIN: 0cm 0cm 10pt" class="Default" align="center"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 11.5pt"&gt;Sitecore License Agreement&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 11.5pt"&gt;&lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;LICENSEE’S USE OF THE SITECORE SOFTWARE IS SUBJECT TO LICENSEE’S FULL ACCEPTANCE OF THE TERMS, CONDITIONS, DISCLAIMERS AND LICENSE RESTRICTIONS SET FORTH IN THIS AGREEMENT. &lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;&lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="MARGIN: 0cm 0cm 0pt" class="MsoNormal"&gt;&lt;b style="mso-bidi-font-weight: normal"&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: 'Times New Roman'" lang="EN-GB"&gt;1. &lt;u&gt;License Grant&lt;/u&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: 'Times New Roman'" lang="EN-GB"&gt;: Upon payment in full of the license fee, Licensor grants Licensee a non-exclusive, perpetual, non-transferable, non-assignable, non-sublicensable license, without time limitations, to use the Sitecore Software in compliance with all applicable laws, in object code form only,&lt;/span&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt" lang="EN-GB"&gt; exclusively for management of Licensee’s own current and future web infrastructure&lt;/span&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: 'Times New Roman'" lang="EN-GB"&gt;, subject to the terms and conditions set forth in this License Agreement.&lt;/span&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt" lang="EN-GB"&gt; Except as expressly authorized by this Agreement, “Licensee” as used herein does not include any other entity or person, including any present or future subsidiary or affiliate of Licensee, or any entity or person owning any interest in Licensee at present or in the future.&lt;/span&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: 'Times New Roman'" lang="EN-GB"&gt; “Sitecore Software” means the software that is licensed by Licensor in this Agreement, and any future Upgrades and Patches, as those terms are defined in Section 6 of this Agreement, that the Licensee may receive in accordance with the terms of the Agreement. &lt;span style="mso-spacerun: yes"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt" lang="EN-GB"&gt;&lt;span style="mso-spacerun: yes"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt; mso-ansi-language: EN-US" lang="EN-GB"&gt;&lt;span style="mso-spacerun: yes"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt; mso-ansi-language: EN-US"&gt;&lt;p&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="MARGIN: 0cm 0cm 0pt" class="MsoNormal"&gt;&lt;i style="mso-bidi-font-style: normal"&gt;&lt;span style="FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt" lang="EN-GB"&gt;&lt;p&gt;&lt;span style="FONT-FAMILY: Times New Roman"&gt; &lt;/span&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt 21.6pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;1.1 License Key&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;: Licensee will be provided a License Key that gives Licensee access to the Sitecore Software. The Sitecore Software may be used only on the equipment with the features and limitations specified in the License Key. The License Key shall be time-limited until full payment of the license fee has been received by Licensor. The License Key may limit the number of Servers on which the Sitecore Software may be installed. For purposes of this Agreement, one Server is defined as one installation and / or application instance on a physical or virtual Server with a processing power for the web process equivalent to at most eight CPU cores. For example, one physical Server may contain eight single core CPUs, four dual core CPUs, two quad core CPUs or one eight core CPU. A Server with three or four quad core CPUs would therefore count as two Servers.&lt;/span&gt;&lt;b style="mso-bidi-font-weight: normal"&gt; &lt;/b&gt;&lt;span style="FONT-SIZE: 10pt; mso-bidi-font-weight: bold"&gt;A virtual server will be counted as the number of physical cores allocated or processor core equivalents allocated to the virtual server.  For example, one virtual server with two physical processor cores allocated, or with the equivalent of two simulated processor cores allocated, would be counted as the equivalent of one physical dual-core processor server.&lt;/span&gt;&lt;span style="FONT-SIZE: 10pt"&gt; &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt 21.6pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;1.2 Intellectual Property Rights&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;: &lt;/span&gt;&lt;span style="FONT-SIZE: 10pt; mso-ansi-language: EN-GB" lang="EN-GB"&gt;Sitecore CMS Software is patented, U.S. Patent No. 7,856,345. &lt;/span&gt;&lt;span style="FONT-SIZE: 10pt"&gt;Ownership of the Sitecore Software, and all worldwide rights, title and interest in and to the Intellectual Property associated with the Sitecore Software shall remain solely and exclusively with Licensor or with third parties that license modules included with the Sitecore Software. Licensee shall retain intact all applicable Licensor copyright, patent and/or trademark notices on and in all copies of the Sitecore Software. All rights, title, and interest in Sitecore Software not expressly granted to Licensee in this Agreement are reserved by Licensor. “Intellectual Property” as used in this Agreement means any and all patents, copyrights, trademarks, service marks and trade names (registered and unregistered), trade secrets, know-how, inventions, licenses and all other proprietary rights throughout the world related to the authorship, origin, design, utility, process, manufacture, programming, functionality and operation of Sitecore Software and its Derivative Works, any product containing any components of the Sitecore Software, all documentation (electronically stored or otherwise), including manuals and marketing materials, regarding the Sitecore Software, and any Confidential Information associated with the Sitecore Software. &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 0pt 22.5pt" class="MsoNormal"&gt;&lt;b&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt" lang="EN-GB"&gt;1.3 Confidential Information: &lt;/span&gt;&lt;/b&gt;&lt;b style="mso-bidi-font-weight: normal"&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt" lang="EN-GB"&gt;&lt;span style="mso-spacerun: yes"&gt; &lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt" lang="EN-GB"&gt;The term “Confidential Information” shall include any information, whether tangible or intangible, including, but not limited to, techniques, discoveries, inventions, ideas, processes, software (in source or object code form), designs, technology, technical specifications, flow charts, procedures, formulas, concepts, any financial data, and all business and marketing plans and information, in each case which is maintained in confidence by the disclosing party (“Disclosing Party”) and disclosed to the other party (“Recipient”) hereunder. The failure by the Disclosing Party to designate any tangible or intangible information as Confidential Information shall not give Recipient the right to treat such information as free from the restrictions imposed by this Agreement if the circumstances would lead a reasonable person to believe that such information is Confidential Information.    Confidential Information does not include information which Recipient documents (a) is now, or hereafter becomes, through no act or failure to act on the part of Recipient, generally known or available to the public; (b) was rightfully in Recipient’s possession prior to disclosure by the Disclosing Party; (c) becomes rightfully known to Recipient, without restriction, from a source other than the Disclosing Party and without any breach of duty to the Disclosing Party;  (d) is developed independently by Recipient without use of or reference to any of the Confidential Information and without violation of any confidentiality restriction contained herein; or (e) is approved by the Disclosing Party for disclosure without restriction, in a written document executed by a duly authorized officer of the Disclosing Party. Recipient shall hold the Confidential Information received from the Disclosing Party in strict confidence and shall not, directly or indirectly, disclose it, except as expressly permitted herein. Recipient shall promptly notify the Disclosing Party upon learning of any misappropriation or misuse of Confidential Information disclosed hereunder. Notwithstanding the foregoing, Recipient shall be permitted to disclose Confidential Information pursuant to a judicial or governmental order, provided that Recipient provides the Disclosing Party reasonable prior notice, and assistance, to contest such order.&lt;p&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 0pt 22.5pt" class="MsoNormal"&gt;&lt;span style="FONT-FAMILY: 'Arial','sans-serif'; FONT-SIZE: 10pt" lang="EN-GB"&gt;&lt;p&gt; &lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt 21.6pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;1.4 Restrictions on Use&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;: Except as expressly authorized by applicable law or by Licensor in writing, Licensee shall not copy, in whole or in part, the Sitecore Software or documentation, or modify, disassemble, decompress, reverse compile, reverse assemble, reverse engineer, or translate any portion of the Sitecore Software. Licensee shall not rent, lease, lend, distribute, sell, assign, license, or otherwise transfer the Sitecore Software, or create Derivative Works of the Sitecore Software.&lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt 21.6pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;1.5 &lt;span style="mso-spacerun: yes"&gt; &lt;/span&gt;Derivative Works: &lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;“Derivative Works” as used herein means any software program (whether in source code or object code), and all copies thereof, developed by or on behalf of Licensee based on or derived from any part of the Sitecore Software, including without limitation any revision, modification, enhancement, translation (including compilation or recapitulation by computer), abridgment, condensation, expansion, or any other form in which the Sitecore Software may be recast, transformed or adapted, and that, if prepared without Licensor's authorization, would constitute a patent, copyright or trade secret infringement of the Sitecore Software, or would otherwise constitute an unauthorized use of Licensor’s Confidential information. In the event any such Derivative Works are created, Licensor shall own all right, title, and interest in and to such Derivative Works. If, under the operation of local law or otherwise, Licensee or such third party comes to have any rights associated with such Derivative Works, Licensee hereby and shall automatically assign all such rights to Licensor for no additional consideration. For avoidance of doubt, Licensor shall claim no intellectual property interest or legal interest of any kind in any code created by Licensee to facilitate its authorized use of the Sitecore Software so long as the creation of such code does not constitute a Derivative Work or violate any other provision of this Agreement. &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt 21.6pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;1.6 Third Party Use and Rights: &lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;Licensee may authorize third parties to assist Licensee in the management, editing, and hosting of web based content created by use of the Sitecore Software, provided that: (1) such activities are within the scope of the activities Licensee is itself authorized to perform under this Agreement; (2) such third party’s acts are primarily for the direct or indirect benefit of Licensee; and (3) such third parties are not charged a fee by Licensee for such activities. Licensee is prohibited from using the Sitecore Software as an Application Software Provider, or in any time-sharing or other commercial arrangement of any kind that makes the Sitecore Software available to third parties primarily for the third party’s own uses. Except as expressly stated in this Agreement, no third party has any rights under this Agreement. Licensee is fully liable to the extent allowed by law for any unauthorized use of the Sitecore Software by third parties caused by any acts or omissions of Licensee. &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt 21.6pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;1.7 Transmission of Limited Licensee Data&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;: The Sitecore Software periodically transmits the following information to a server maintained by Licensor: License Key ID, licensee name, hostname (Licensee’s website URL), host IP, and directory installation path. This information is used by Licensor to send periodic communications to Licensee relevant to use of the Sitecore Software, and to verify that the Sitecore Software is being used in authorized locations only. Licensee expressly consents to the transmission of such information. &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;&lt;p&gt;&lt;span style="FONT-FAMILY: Arial"&gt; &lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;2. &lt;u&gt;Limited Warranties&lt;/u&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;: &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt 22.5pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b style="mso-bidi-font-weight: normal"&gt;&lt;span style="FONT-SIZE: 10pt"&gt;2.1 Licensor’s Limited Warranty&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;: Licensor expressly warrants that the Sitecore Software provided to Licensee will work for a period of ninety (90) days following the effective date of this Agreement according to &lt;/span&gt;&lt;span style="FONT-SIZE: 10pt; mso-ansi-language: EN-GB" lang="EN-GB"&gt;the then current functional, operational, and/or performance capabilities of the Sitecore Software&lt;/span&gt;&lt;span style="FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt; mso-ansi-language: EN-GB" lang="EN-GB"&gt; &lt;/span&gt;&lt;span style="FONT-SIZE: 10pt"&gt;as set forth in the Sitecore Developer Network. In the event any such Sitecore Software does not operate according to these capabilities during this Limited Warranty Period, Licensor shall repair or replace the Sitecore Software and such repair or replacement shall be Licensee’s sole and exclusive remedy.&lt;span style="mso-spacerun: yes"&gt;  &lt;/span&gt;&lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt 22.5pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b style="mso-bidi-font-weight: normal"&gt;&lt;span style="FONT-SIZE: 10pt"&gt;2.2&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt; mso-ansi-language: EN-GB"&gt; &lt;b style="mso-bidi-font-weight: normal"&gt;&lt;span lang="EN-GB"&gt;Virus/Malicious Code Warranty&lt;/span&gt;&lt;/b&gt;&lt;span lang="EN-GB"&gt;: &lt;/span&gt;&lt;/span&gt;&lt;span style="FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt"&gt;Licensor and Licensee warrant that they will use commercially reasonable virus and malicious code detection software programs to test any electronic files, including electronic communications, prior to any delivery or upon receiving such communications and that the parties will continue to take such steps with respect to exchanging electronic files and communications pursuant to this Agreement. In the event either party detects any computer virus or malicious code it shall immediately notify the other party and where possible shall promptly provide revised replacement files in the event any such computer virus or malicious code is detected. &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;3. &lt;u&gt;DISCLAIMER OF WARRANTIES&lt;/u&gt;: EXCEPT AS EXPRESSLY SET FORTH IN SECTION 2 ABOVE, THE SITECORE SOFTWARE AND THE ASSOCIATED DOCUMENTATION ARE SUPPLIED TO LICENSEE "AS IS.” LICENSOR (DEFINED IN THIS SECTION AS LICENSOR’S PARENT, AFFILIATES, SUBSIDIARIES, DISTRIBUTORS AND THEIR RESPECTIVE OFFICERS, DIRECTORS AND EMPLOYEES) MAKES NO WARRANTY, EXPRESS OR IMPLIED, AS TO THE SITECORE SOFTWARE, &lt;span style="mso-spacerun: yes"&gt; &lt;/span&gt;THE ASSOCIATED DOCUMENTATION, THE OPERATION OF THE SITECORE SOFTWARE, THE SITECORE MAINTENANCE PROGRAM, OR ANY OTHER GOODS OR SERVICES RENDERED BY LICENSOR TO LICENSEE, INCLUDING BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, PERFORMANCE, ACCURACY, NON-INFRINGEMENT, FITNESS FOR A PARTICULAR PURPOSE AND ALL WARRANTIES ARISING FROM COURSE OF DEALING OR USAGE OF TRADE. LICENSOR EXPRESSLY DISCLAIMS ANY AND ALL EXPRESS, IMPLIED OR STATUTORY WARRANTIES THAT THE SITECORE SOFTWARE WILL RUN PROPERLY ON ANY HARDWARE, THAT THE SITECORE SOFTWARE WILL MEET LICENSEE’S REQUIREMENTS OR OPERATE IN THE COMBINATIONS WHICH MAY BE SELECTED FOR USE BY LICENSEE, OR THAT THE OPERATION OF THE SITECORE SOFTWARE WILL BE UNINTERRUPTED OR ERROR FREE, OR THAT ALL ERRORS WILL BE CORRECTED. LICENSOR MAKES NO EXPRESS OR IMPLIED WARRANTY OF ANY KIND REGARDING ANY SEPARATELY LICENSED SOFTWARE THAT MAY BE USED WITH THE SITECORE SOFTWARE.&lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;4. &lt;u&gt;LIMITATION OF LIABILITY&lt;/u&gt;: LICENSOR (DEFINED IN THIS SECTION AS LICENSOR’S PARENT, AFFILIATES, SUBSIDIARIES, DISTRIBUTORS AND THEIR RESPECTIVE OFFICERS, DIRECTORS AND EMPLOYEES) SHALL NOT BE LIABLE TO LICENSEE OR ANY THIRD PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES ARISING OUT OF OR RELATED TO THIS AGREEMENT UNDER ANY LEGAL THEORY, INCLUDING BUT NOT LIMITED TO, LOST PROFITS, LOST DATA OR BUSINESS INTERRUPTION, THE COST OF RECOVERING ANY DATA, INFRINGEMENT, OR THE COST OF SUBSTITUTE SOFTWARE, EVEN IF LICENSOR HAS BEEN ADVISED OF, KNOWS OF, OR SHOULD HAVE KNOWN, OF THE POSSIBILITY OF SUCH DAMAGES. LICENSOR’S AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED THE AMOUNT OF FEES (NOT INCLUDING MAINTENANCE PROGRAM CHARGES) PAID BY LICENSEE FOR USE OF THE SITECORE SOFTWARE UNDER THIS AGREEMENT. LICENSOR WILL NOT BE LIABLE FOR DELAYS OR FAILURES IN PERFORMANCE OF THE SUPPORT OR ANY OTHER SERVICES CAUSED BY FORCES BEYOND ITS CONTROL OR ANY FORCE MAJEURE EVENT SUCH AS ACT OF TERRORISM, LOSS OF POWER, ACT OF GOD, OR SIMILAR OCCURRENCE OR FOR DAMAGES CAUSED BY LICENSEE’S FAILURE TO PERFORM ITS OBLIGATIONS UNDER THIS AGREEMENT. THE LIMITATION PROVISIONS OF THIS SECTION SHALL BE APPLICABLE TO ANY CLAIM FILED BY LICENSEE ARISING OUT OF OR RELATING TO ANY SEPARATELY LICENSED SOFTWARE THAT MAY BE USED WITH THE SITECORE SOFTWARE. &lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;&lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;5. &lt;u&gt;Sitecore Maintenance Program&lt;/u&gt;&lt;/span&gt;&lt;/b&gt;&lt;b style="mso-bidi-font-weight: normal"&gt;&lt;u&gt;&lt;span style="FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt"&gt;:&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt; &lt;span style="mso-bidi-font-weight: bold"&gt;The Sitecore Maintenance Program includes Upgrades and support.  Upgrades are free of charge for as long as Licensee is enrolled in the Maintenance Program.&lt;span style="mso-spacerun: yes"&gt;  &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="FONT-SIZE: 10pt; mso-bidi-font-weight: bold; mso-ansi-language: EN-AU" lang="EN-AU"&gt;Licensee&lt;/span&gt;&lt;span style="FONT-SIZE: 10pt; mso-bidi-font-weight: bold"&gt; will automatically be included in the Maintenance Program and will be charged an annual fee of 20% of the listed cost of all software purchased.   The Maintenance Program &lt;/span&gt;&lt;span style="FONT-SIZE: 10pt; mso-bidi-font-weight: bold; mso-ansi-language: EN-AU" lang="EN-AU"&gt;is free of charge for the first year after the initial purchase of Sitecore Software.&lt;span style="mso-spacerun: yes"&gt;  &lt;/span&gt;&lt;/span&gt;&lt;span style="FONT-SIZE: 10pt; mso-bidi-font-weight: bold; mso-ansi-language: EN-GB" lang="EN-GB"&gt;Three years after the date of the initial purchase and each three-year anniversary thereafter, Licensor may adjust the Maintenance Program charge then in effect for all software purchased under this Agreement to 20% of the Licensor’s then-current retail prices.&lt;/span&gt;&lt;span style="FONT-SIZE: 10pt; mso-bidi-font-weight: bold"&gt;  Licensee may cancel the Maintenance Program by providing Licensor with 60 days notice prior to the end of any 12-month Maintenance Program period.  Licensor may cancel the Maintenance Program upon Licensee’s failure to pay timely any applicable Maintenance Program charge.&lt;span style="mso-spacerun: yes"&gt;  &lt;/span&gt;A cancelled Maintenance Program may not be renewed except upon payment of double the amount of fees that would have been paid during the lapsed period.  &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;6. &lt;u&gt;Upgrades and Patches of Sitecore Software&lt;/u&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;: “Patch” as used in this Agreement means a specific, targeted fix to a discrete problem in the use or functionality of the Sitecore Software that Licensor in its sole discretion defines to constitute a “Patch” and may from time to time provide to Licensee. “Upgrade” as used in this Agreement means a new version of some or all of the Sitecore Software, or an improvement in the use or functionality of the Software more substantial than a Patch, that Licensor in its sole discretion defines to constitute an “Upgrade” and may from time to time provide to Licensees enrolled in the Sitecore Maintenance program. Licensee expressly acknowledges that Upgrades and Patches may change functionality of the Software and integration with other systems, and may not work with some or all of the Sitecore Software modules, or be backward compatible with earlier versions of Sitecore Software. Installation of Patches and Upgrades is the choice and responsibility of Licensee. To the extent that operation of the Sitecore Software is affected by problems in standard software, including, but not limited to, Microsoft Internet Explorer, Windows and the Microsoft.Net, then Licensee shall install updates to such standard software per Licensor’s specifications in order to resolve these issues. Licensor has no control over such standard software, and cannot assure that problems with such standard software will be corrected, or that such corrections will be made in a timely manner. &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;7. &lt;span style="mso-spacerun: yes"&gt; &lt;/span&gt;&lt;u&gt;Waivers&lt;/u&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;: All waivers must be in writing and signed by authorized representatives of the parties. Any waiver or failure to enforce any provision of this Agreement on one occasion shall not be deemed a waiver of any other provision or of such provision on any other occasion. &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;8. &lt;span style="mso-spacerun: yes"&gt; &lt;/span&gt;&lt;u&gt;Severability&lt;/u&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;: If any provision of this Agreement is adjudicated to be unenforceable, such provision shall be deemed changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions shall continue in full force and effect. &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;9. &lt;span style="mso-spacerun: yes"&gt; &lt;/span&gt;&lt;u&gt;Assignment&lt;/u&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;: Licensee may not assign this Agreement. Licensor may assign this Agreement to a successor (whether by merger, a sale of all or a significant portion of its assets, a sale of a controlling interest of its capital stock, or otherwise) that agrees to assume Licensor’s obligations under this Agreement. Any attempted assignment or transfer in violation of this Section shall be void and of no force or effect.   &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;span style="FONT-FAMILY: Arial"&gt;&lt;b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;10. &lt;u&gt;Entire Agreement&lt;/u&gt;&lt;/span&gt;&lt;/b&gt;&lt;span style="FONT-SIZE: 10pt"&gt;: This Agreement, and any attachment that is expressly incorporated in this Agreement, constitutes the entire agreement between the parties regarding the subject matter hereof and supersedes all prior or contemporaneous agreements, understandings and communications, whether written or oral. This Agreement may be amended only by a written document signed by both parties. In the event of a conflict between any provision of this Agreement with any other attachment or document, this Agreement shall control. &lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="Default"&gt;&lt;span style="FONT-SIZE: 10pt"&gt;&lt;p&gt;&lt;span style="FONT-FAMILY: Arial"&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="MsoNormal"&gt;&lt;span style="FONT-SIZE: 10pt" lang="EN-GB"&gt;&lt;p&gt;&lt;span style="FONT-FAMILY: Times New Roman"&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="MsoNormal"&gt;&lt;span lang="EN-GB"&gt;&lt;p&gt;&lt;span style="FONT-FAMILY: Times New Roman"&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 10pt" class="MsoNormal"&gt;&lt;span style="FONT-SIZE: 8pt" lang="EN-GB"&gt;&lt;span style="FONT-FAMILY: Times New Roman"&gt;Sitecore License Agreement. May 5, 2011&lt;p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt; &lt;/p&gt;</License>
+      <Comment />
+      <Attributes>folder=temp|files=Core\da-DK.xml;Core\de-DE.xml;Core\ja-JP.xml</Attributes>
+      <Readme>
+        ${project.fullname}
+-------------------------------------------------------------
+Date: ${readme.date}
+
+-------------------------------------------------------------
+Prerequisites:
+
+•  ${product.version.net}.
+•  ${product.version.sql}.
+•  ${product.version.ef}.
+
+•  ${product.version.cms.multiple}.
+•  ${product.version.dms.multiple}.
+
+-------------------------------------------------------------
+${product.name} runs on:
+
+•  ${product.version.cms.multiple}.
+
+-------------------------------------------------------------
+${product.name} has been tested on:
+
+•  ${product.version.cms.6601}.
+•  ${product.version.cms.6602}.
+
+-------------------------------------------------------------
+Lucene Search Engine:
+
+If you want to use Lucene Search with the example pages,
+you must:
+
+1.	Install the package with the core functionality.
+2.	Publish the entire website.
+3.	Implement the changes in the config files.
+4.	Rebuild the search indexes.
+5.	Rebuild the link databases.
+
+For more information about configuring Lucene search for
+${product.name}, see the E-Commerce Installation
+Guide.
+
+-------------------------------------------------------------
+License:
+
+You must have a valid Sitecore license that includes
+Sitecore.Ecommerce.
+If you are unsure whether you have the right license, search
+you license file for ‘Sitecore.Ecommerce’.
+
+-------------------------------------------------------------
+Sitecore® is a registered trademark. All other brand and
+product names are the property of their respective holders.
+The contents of this document are the property of Sitecore.
+Copyright © 2001-${readme.year} Sitecore. All rights reserved.
+      </Readme>
+      <Publisher>Sitecore Corporation</Publisher>
+      <PostStep>Sitecore.Ecommerce.Install.Localization.LocalizationPostStep, Sitecore.Ecommerce.Kernel</PostStep>
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <items>
+      <Database>master</Database>
+      <Root>{5FAA895F-E809-4364-8D39-EC391F29AE2F}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern>^((?!DIBS)(?!Amazon)(?!AuthorizeNet)(?!BBS)(?!EPay)(?!PayEx)(?!QuickPay)(?!PayPal).)*$</Pattern>
+          <FilterSearchType>Regex</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>System</Name>
+    </items>
+    <items>
+      <Database>master</Database>
+      <Root>{53032689-52E9-4985-B1C0-46921D7F1E39}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Templates</Name>
+    </items>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/system/Settings/Security/Profiles/Customer/{AC45E370-869B-4AEA-BC51-C4AFB248D498}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Ecommerce/{4FAC5CD0-2221-4077-A5FA-507328BCA8B0}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Ecommerce/Price-Matrix/{8F8F523C-A897-4F0F-B351-D6BC885E73F5}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>System (core)</Name>
+    </xitems>
+    <items>
+      <Database>core</Database>
+      <Root>{9D31F66A-D3BA-41F3-A7BB-0AC1FB8EE05F}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Templates (core)</Name>
+    </items>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Sitecore.Ecommerce.config</x-item>
+        <x-item>/App_Config/Unity.config</x-item>
+        <x-item>/bin/EntityFramework.dll</x-item>
+        <x-item>/bin/Microsoft.Practices.Unity.Configuration.dll</x-item>
+        <x-item>/bin/Microsoft.Practices.Unity.Configuration.xml</x-item>
+        <x-item>/bin/Microsoft.Practices.Unity.dll</x-item>
+        <x-item>/bin/Microsoft.Practices.Unity.Interception.Configuration.dll</x-item>
+        <x-item>/bin/Microsoft.Practices.Unity.Interception.Configuration.xml</x-item>
+        <x-item>/bin/Microsoft.Practices.Unity.Interception.dll</x-item>
+        <x-item>/bin/Microsoft.Practices.Unity.Interception.xml</x-item>
+        <x-item>/bin/Microsoft.Practices.Unity.xml</x-item>
+        <x-item>/bin/Sitecore.Ecommerce.Analytics.dll</x-item>
+        <x-item>/bin/Sitecore.Ecommerce.Core.dll</x-item>
+        <x-item>/bin/Sitecore.Ecommerce.Data.dll</x-item>
+        <x-item>/bin/Sitecore.Ecommerce.DomainModel.dll</x-item>
+        <x-item>/bin/Sitecore.Ecommerce.Kernel.dll</x-item>
+        <x-item>/bin/Sitecore.Ecommerce.Merchant.dll</x-item>
+        <x-item>/bin/Sitecore.Ecommerce.ServiceModel.dll</x-item>
+        <x-item>/bin/Sitecore.Ecommerce.Services.dll</x-item>
+        <x-item>/bin/Sitecore.Ecommerce.Shell.dll</x-item>
+        <x-item>/bin/Sitecore.Ecommerce.Visitor.dll</x-item>
+        <x-item>/sitecore/admin/ConvertPrices.aspx</x-item>
+        <x-item>/sitecore/shell/Override/RebuildSearchIndex.xml</x-item>
+        <x-item>/sitecore/shell/Themes/Standard/OrderManager.zip</x-item>
+        <x-item>/App_Data/SitecoreEcommerce_Orders.mdf</x-item>
+        <x-item>/App_Data/SitecoreEcommerce_Orders.ldf</x-item>
+        <x-item>/App_Data/SitecoreEcommerce_ActionLog.mdf</x-item>
+        <x-item>/App_Data/SitecoreEcommerce_ActionLog.ldf</x-item>
+        <x-item>/temp/Core/de-DE.xml</x-item>
+        <x-item>/temp/Core/ja-JP.xml</x-item>
+        <x-item>/temp/Core/da-DK.xml</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Marketing Center/Goals/Checkout Completed/{4DF15824-0A2D-492C-93EC-218B090F7CEA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Marketing Center/Goals/Product Reviewed/{9DEBCD5B-5F93-4E87-9E70-FFC677F9A7C2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Add To Shopping Cart/{BEED9460-6187-4A53-A38D-1858F2916645}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Checkout Delivery Next/{8F6EAED4-679C-4146-94B1-487D5650E36B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Checkout Delivery Option Selected/{84716EF2-EB36-486C-B3FC-1FA9837F6478}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Checkout Next/{771ED810-D9EA-4B82-B064-E9FC7C5A0CE4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Checkout Notification Option Selected/{8A2FC82C-10B7-454A-B2C8-C52DFE32A2B5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Checkout Payment Method Selected/{2E3E7642-BA4E-47A5-B52D-2ABA88439372}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Checkout Payment Next/{6DF17A35-5C10-492E-96A5-EA5F7EDC100D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Checkout Previous/{C1FB1D70-67FE-480E-A417-CD7A0B3C2744}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Clicked Login Button/{6BAAE5FA-7D9A-4D80-9AF9-6676A30460F2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Clicked Login Link/{C559355F-CBCC-4B5E-B94D-E4275B582689}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Go To Checkout/{E24BB407-F349-420E-8FCB-EF481C082F38}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Go To Shopping Cart/{7E3E5014-F728-40FD-8D15-B7E67FF19D33}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Product Removed/{06F2B96F-A863-4B1F-B3A7-166122B4A600}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Shopping Cart Continue Shopping/{D60C7F43-20BC-4EF3-BEF0-5C296C347061}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Shopping Cart Emptied/{33CAC411-BFA0-4D27-B034-900B99E19F11}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Shopping Cart Item Removed/{B1758FFF-E860-40C4-B55A-7EF433C14B67}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Shopping Cart Item Updated/{EFE59247-489B-4959-8532-08397A9C5BEA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Shopping Cart Updated/{19F4D2C5-D137-46B0-A93C-24FEE6CC71B0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Shopping Cart Viewed/{3FC2F1DA-0AB3-4112-AE68-5642B9922FE9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/Tab Selected/{D32E13ED-843B-473A-8B77-46D3CBCB8A4E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/User Clicked Item In List/{AF71CDE9-0B11-421F-BC5D-54BE22A7064B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/User Logged Out/{49A24930-0397-452B-BD13-16F37E101A7B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/User Login Failed/{53213232-50A3-4508-AC95-B9DE5DD74BD7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Analytics/Page Events/User Login Succeded/{122621D5-2A3F-44FD-A46C-E6721B13EC02}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Analytics</Name>
+    </xitems>
+    <accounts>
+      <Entries>
+        <x-item>roles:extranet\Customer</x-item>
+        <x-item>roles:sitecore\Order Manager Accounting</x-item>
+        <x-item>roles:sitecore\Order Manager Administrators</x-item>
+        <x-item>roles:sitecore\Order Manager Client Users</x-item>
+        <x-item>roles:sitecore\Order Manager Customer Service</x-item>
+        <x-item>roles:sitecore\Order Manager Everyone</x-item>
+        <x-item>roles:sitecore\Order Manager Log Viewers</x-item>
+        <x-item>roles:sitecore\Order Manager Packaging</x-item>
+        <x-item>roles:sitecore\Order Manager Processing</x-item>
+        <x-item>roles:sitecore\Order Manager Example Processing</x-item>
+        <x-item>roles:sitecore\Order Manager Sales</x-item>
+        <x-item>roles:sitecore\Order Manager Shipping</x-item>
+        <x-item>roles:sitecore\Sitecore Client Authoring</x-item>
+      </Entries>
+      <Converter>
+        <AccountToEntryConverter>
+          <Transforms />
+        </AccountToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Security Accounts</Name>
+    </accounts>
+    <items>
+      <Database>core</Database>
+      <Root>{CACDED79-AC9A-439E-8FDF-D69525BA62B5}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Applications</Name>
+    </items>
+    <items>
+      <Database>core</Database>
+      <Root>{FE99B0FF-6A5F-4D35-97A2-0501FFC11D6B}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Content Editor Editors</Name>
+    </items>
+    <items>
+      <Database>master</Database>
+      <Root>{1BA43F77-C46A-4F19-8F42-93C238BB1840}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>System Settings Validation Rules</Name>
+    </items>
+    <files>
+      <Include>
+        <FileNameFilter>
+          <Pattern />
+          <AcceptDirectories>False</AcceptDirectories>
+        </FileNameFilter>
+        <FileDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+        <FileDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+      </Include>
+      <Exclude />
+      <Name>Services</Name>
+      <Root>/sitecore modules/Shell/Ecommerce/Services</Root>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+    </files>
+    <items>
+      <Database>master</Database>
+      <Root>{D6073312-1078-4738-B238-3EEC0C880355}</Root>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include>
+        <ItemNameFilter>
+          <Pattern />
+          <FilterSearchType>Simple</FilterSearchType>
+        </ItemNameFilter>
+        <ItemDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <NotOlderThan />
+          <ActionDateTo />
+          <ActionDateFrom />
+        </ItemDateFilter>
+        <ItemPublishFilter>
+          <PublishDate />
+          <CheckWorkflow>True</CheckWorkflow>
+        </ItemPublishFilter>
+        <ItemTemplateFilter>
+          <Templates />
+        </ItemTemplateFilter>
+        <ItemUserFilter>
+          <FilterType>Created</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemUserFilter>
+          <FilterType>Modified</FilterType>
+          <Accounts />
+        </ItemUserFilter>
+        <ItemLanguageFilter>
+          <Languages />
+        </ItemLanguageFilter>
+      </Include>
+      <Exclude />
+      <Name>Branches</Name>
+    </items>
+    <files>
+      <Include>
+        <FileNameFilter>
+          <Pattern />
+          <AcceptDirectories>False</AcceptDirectories>
+        </FileNameFilter>
+        <FileDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+        <FileDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+      </Include>
+      <Exclude />
+      <Name>Shell Applications</Name>
+      <Root>/sitecore/shell/Applications/Modules/Ecommerce</Root>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+    </files>
+    <files>
+      <Include>
+        <FileNameFilter>
+          <Pattern />
+          <AcceptDirectories>False</AcceptDirectories>
+        </FileNameFilter>
+        <FileDateFilter>
+          <FilterType>CreatedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+        <FileDateFilter>
+          <FilterType>ModifiedFilter</FilterType>
+          <ActionDateTo />
+          <ActionDateFrom />
+          <NotOlderThan />
+        </FileDateFilter>
+      </Include>
+      <Exclude />
+      <Name>Reports</Name>
+      <Root>/sitecore modules/Shell/Ecommerce/Reports</Root>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+    </files>
+    <xfiles>
+      <Entries>
+        <x-item>/sitecore/admin/ConvertOrders.aspx</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Tools</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

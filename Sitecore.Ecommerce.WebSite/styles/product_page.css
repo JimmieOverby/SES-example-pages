@@ -1,0 +1,251 @@
+/* CSS Document for the Product Detail Page */
+
+/*
+	-----------------------------------------------------
+	Large Product Shot
+	-----------------------------------------------------
+*/
+
+#product_shot {
+	margin: 0 0 10px 0;
+}
+
+/*
+	-----------------------------------------------------
+	The container for the whole tab system
+	-----------------------------------------------------
+*/
+
+#tab_area {
+	margin-bottom: 12px;
+}
+
+/*
+	-----------------------------------------------------
+	The tab bar itself
+	-----------------------------------------------------
+*/
+
+ul#tab_controls
+{
+	background-position: right bottom;
+	background: url(../images/backgrounds/tab_bar.gif) repeat-x right bottom;
+	height: 41px;
+	margin: 0;
+	padding-left: 6px;
+}
+
+ul#tab_controls li {
+	clear: none;
+	display: block;
+	float: left;
+	height: 42px;
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+
+ul#tab_controls li a {
+	background-image: url(../images/ecommerce/tab.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	color: #666666;
+	display: block;
+	font-weight: bold;
+	height: 41px;
+	line-height: 41px;
+	outline: none;
+	overflow: hidden;
+	text-align: center;
+	width: 129px;
+}
+
+ul#tab_controls li a:hover {
+	color: #e9242c;
+	background-position: 0 -41px;
+}
+
+ul#tab_controls li.current a,
+ul#tab_controls li.current a:hover {
+	color: #e9242c;
+	background-position: 0 -82px;
+}
+
+/*
+	-----------------------------------------------------
+	The changing content of the tabbed area
+	-----------------------------------------------------
+*/
+
+div.tab_content {
+	border: 1px solid #cccccc;
+	border-top: none;
+	padding: 12px 10px 24px 10px;
+}
+
+/*
+	-----------------------------------------------------
+	The Specifications Tab
+	-----------------------------------------------------
+*/
+
+#tab_content_specifications table {
+	width: 100%;
+}
+
+#tab_content_specifications table thead,
+#tab_content_specifications table tfoot,
+#tab_content_specifications table caption {
+	display: none;
+}
+
+#tab_content_specifications tr.odd th,
+#tab_content_specifications tr.odd td {
+	background: #f0f0f0 url(../images/backgrounds/odd_row.gif) bottom left repeat-x;
+}
+
+#tab_content_specifications td
+{
+	color: #666666;
+	font-size: 12px;
+	padding: 3px 10px;
+	text-align:  justify;
+}
+
+#tab_content_specifications th 
+{
+	text-align:  left;
+	color: #666666;
+	font-size: 12px;
+	padding: 3px 10px;
+
+}
+#tab_content_specifications tr
+{
+	display:table-row;
+}
+/*
+	-----------------------------------------------------
+	The Accessories Tab
+	Inherits most of its styles.
+	-----------------------------------------------------
+*/
+
+#tab_content_accessories ul.product_list li div.content {
+	width: 315px;
+}
+
+/*
+	-----------------------------------------------------
+	The Resources Tab
+	-----------------------------------------------------
+*/
+
+#tab_content_resources div.resource {
+	background: url(../images/backgrounds/accessory_100.jpg) bottom left no-repeat;
+	font-size: 12px;
+	padding: 16px;
+}
+
+#tab_content_resources div.resource h3 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#tab_content_resources div.resource p {
+	margin: 0;
+}
+
+/*
+	-----------------------------------------------------
+	The Reviews Tab
+	-----------------------------------------------------
+*/
+
+#tab_content_reviews {
+	font-size: 12px;
+}
+
+#tab_content_reviews h2 {
+	color: #666666;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 20px;
+	text-indent: 0;
+}
+
+#tab_content_reviews h2 span {
+	float: left;
+	padding-right: 20px;
+}
+
+#tab_content_reviews ul.form {
+	margin: 0;
+	padding: 0;
+}
+
+#tab_content_reviews ul.form li {
+	list-style: none;
+	margin: 5px 0;
+	padding: 0;
+	width: 530px;
+}
+
+#tab_content_reviews ul.form li label {
+	clear: none;
+	display: block;
+	font-weight: bold;
+	float: left;
+	padding-right: 5px;
+	text-align: right;
+	width: 119px;
+}
+
+#tab_content_reviews ul.form li input,
+#tab_content_reviews ul.form li textarea {
+	border: 1px solid #666666;
+	clear: none;
+	float: left;
+	width: 390px;
+}
+
+#tab_content_reviews ul.form li textarea {
+	height: 100px;
+}
+
+#tab_content_reviews ul.form li a {
+	float: right;
+}
+
+#tab_content_reviews #btn_review {
+}
+
+#tab_content_reviews ul.reviews {
+	margin: 20px 0;
+	padding: 0;
+}
+
+#tab_content_reviews ul.reviews li {
+	list-style: none;
+	margin: 10px 0;
+	padding: 0;
+}
+
+#tab_content_reviews ul.reviews li div.rate {
+	clear: none;
+	float: left;
+	font-weight: bold;
+	padding-right: 5px;
+	text-align: center;
+	width: 119px;
+}
+
+#tab_content_reviews ul.reviews li div.rate span.rating {
+	margin: 0 auto;
+}
+
+#tab_content_reviews ul.reviews li div.content {
+	clear: none;
+	float: left;
+	width: 390px;
+}
