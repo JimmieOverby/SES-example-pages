@@ -9,4 +9,6 @@ The example pages are not intended for use in production environments.
 
 The example pages were developed a few years ago and some parts of the solution do not follow current Sitecore best practices.     
 
+
+**Important:**
 Please note that your use of the Sitecore Material accessible via this page, is subject to the terms, conditions, disclaimer and license restrictions of the Sitecore Materials Limited License Agreement (Source Code) – see this link. Your download of the Sitecore Materials accessible via this page is considered an acceptance hereof 
