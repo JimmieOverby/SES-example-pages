@@ -49,14 +49,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Amazon.CBUI, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Resources\Amazon.CBUI.dll</HintPath>
-    </Reference>
-    <Reference Include="Amazon.FPS, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Resources\Amazon.FPS.dll</HintPath>
-    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.3.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Resources\HtmlAgilityPack.dll</HintPath>
@@ -192,8 +184,6 @@
     <Content Include="layouts\Ecommerce\Demo\PageMain.aspx" />
     <Content Include="sitecore modules\Web\Web Forms for Marketers\Control\SitecoreSimpleFormAscx.ascx" />
     <Content Include="sitecore\admin\ConvertOrders.aspx" />
-    <Content Include="sitecore\admin\tests\paymentstest.aspx" />
-    <Content Include="sitecore\admin\tests\Products\ProductSpecification.aspx" />
     <Content Include="layouts\Ecommerce\Examples\Search.ascx" />
     <Content Include="layouts\Ecommerce\Examples\SearchResult.ascx" />
     <Content Include="layouts\Ecommerce\Demo\ThreeColumnContent.ascx" />
@@ -406,12 +396,6 @@
       <DependentUpon>SampleLayoutPrint.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="..\Sitecore\AssemblyVersionInfo.cs">
-      <Link>Properties\AssemblyVersionInfo.cs</Link>
-    </Compile>
-    <Compile Include="..\Sitecore\CompanyInfo.cs">
-      <Link>Properties\CompanyInfo.cs</Link>
-    </Compile>
     <Compile Include="sitecore modules\Web\Ecommerce\UI\Controls\InfoField.cs" />
     <Compile Include="sitecore modules\Web\Ecommerce\UI\Adapters\ValidateControlAdapter.cs" />
     <Compile Include="sitecore modules\Web\Web Forms for Marketers\Control\SitecoreSimpleFormAscx.ascx.cs">
@@ -421,34 +405,9 @@
     <Compile Include="sitecore modules\Web\Web Forms for Marketers\Control\SitecoreSimpleFormAscx.ascx.designer.cs">
       <DependentUpon>SitecoreSimpleFormAscx.ascx</DependentUpon>
     </Compile>
-    <Compile Include="sitecore\admin\tests\IntegrationalPayment\CreditCard.aspx.cs">
-      <DependentUpon>CreditCard.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="sitecore\admin\tests\IntegrationalPayment\CreditCard.aspx.designer.cs">
-      <DependentUpon>CreditCard.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="sitecore\admin\tests\IntegrationalPayment\UserInfo.aspx.cs">
-      <DependentUpon>UserInfo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="sitecore\admin\tests\IntegrationalPayment\UserInfo.aspx.designer.cs">
-      <DependentUpon>UserInfo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="sitecore\admin\tests\SslHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\ConnectionStrings.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="App_Browsers\Form.browser" />
-    <Content Include="App_Config\Include\Serialization.config" />
-    <Content Include="App_Config\Include\Sitecore.Ecommerce.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Unity.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="images\backgrounds\content_v_tile.gif" />
     <Content Include="images\backgrounds\head_full_width.jpg" />
     <Content Include="images\backgrounds\index_top_b_100.jpg" />
@@ -551,10 +510,6 @@
       <Project>{650995B2-04EB-4B5F-860D-16DBFEFAE9C6}</Project>
       <Name>Sitecore.Ecommerce.Analytics</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Apps\Sitecore.Ecommerce.Apps.csproj">
-      <Project>{BA534F05-D14E-490B-AC3D-1FA3809ABB40}</Project>
-      <Name>Sitecore.Ecommerce.Apps</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Sitecore.Ecommerce.Core\Sitecore.Ecommerce.Core.csproj">
       <Project>{F76CB1D3-5DFA-487B-B6B2-02DC614AC781}</Project>
       <Name>Sitecore.Ecommerce.Core</Name>
@@ -575,38 +530,6 @@
       <Project>{9C45A6F1-560E-4688-BEC7-3E2F927CFF9A}</Project>
       <Name>Sitecore.Ecommerce.Kernel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.Amazon\Sitecore.Ecommerce.Payments.Amazon.csproj">
-      <Project>{16F0DFE8-8FA8-489A-A3F5-A50D075CA58B}</Project>
-      <Name>Sitecore.Ecommerce.Payments.Amazon</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.AuthorizeNet\Sitecore.Ecommerce.Payments.AuthorizeNet.csproj">
-      <Project>{6A777C3A-5C34-4AB7-BD48-2D17E7C89944}</Project>
-      <Name>Sitecore.Ecommerce.Payments.AuthorizeNet</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.Bbs\Sitecore.Ecommerce.Payments.Bbs.csproj">
-      <Project>{C2118274-39C5-425C-B51B-CE567DDEB1CF}</Project>
-      <Name>Sitecore.Ecommerce.Payments.Bbs</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.Dibs\Sitecore.Ecommerce.Payments.Dibs.csproj">
-      <Project>{9DC6D07F-7A2E-4161-9539-961371A969F1}</Project>
-      <Name>Sitecore.Ecommerce.Payments.Dibs</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.EPay\Sitecore.Ecommerce.Payments.EPay.csproj">
-      <Project>{36B8BC9E-0F7E-4430-AEC7-00B54E937D71}</Project>
-      <Name>Sitecore.Ecommerce.Payments.EPay</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.PayEx\Sitecore.Ecommerce.Payments.PayEx.csproj">
-      <Project>{770CE443-D6A5-466C-8ADE-74A922435621}</Project>
-      <Name>Sitecore.Ecommerce.Payments.PayEx</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.PayPal\Sitecore.Ecommerce.Payments.PayPal.csproj">
-      <Project>{7986F255-BE77-4862-AA2C-95E0C5B98926}</Project>
-      <Name>Sitecore.Ecommerce.Payments.PayPal</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Payments.QuickPay\Sitecore.Ecommerce.Payments.QuickPay.csproj">
-      <Project>{17C187C7-09A9-41D7-8C50-68F4D746B49D}</Project>
-      <Name>Sitecore.Ecommerce.Payments.QuickPay</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Sitecore.Ecommerce.ServiceModel\Sitecore.Ecommerce.ServiceModel.csproj">
       <Project>{E21EC10B-0C3D-4D7B-83F8-71225E5195DB}</Project>
       <Name>Sitecore.Ecommerce.ServiceModel</Name>
@@ -619,37 +542,13 @@
       <Project>{8828062B-00F9-4EFC-A40B-36A8E12E9F11}</Project>
       <Name>Sitecore.Ecommerce.Shell</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Specs\Sitecore.Ecommerce.Specs.csproj">
-      <Project>{e98984a7-5d42-49fe-89cd-abd98d5aaa7f}</Project>
-      <Name>Sitecore.Ecommerce.Specs</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Tests.Distributed\Sitecore.Ecommerce.Tests.Distributed.csproj">
-      <Project>{4B48E107-8B6C-4432-B0CF-EA148BEDE6F7}</Project>
-      <Name>Sitecore.Ecommerce.Tests.Distributed</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.Tests.Integration\Sitecore.Ecommerce.Tests.Integration.csproj">
-      <Project>{5DB94714-3B53-4842-9410-680F256CC465}</Project>
-      <Name>Sitecore.Ecommerce.Tests.Integration</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sitecore.Ecommerce.UITests\Sitecore.Ecommerce.UITests.csproj">
-      <Project>{53BE82EA-0D65-4B80-9742-09552A6D1F0F}</Project>
-      <Name>Sitecore.Ecommerce.UITests</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Sitecore.Ecommerce.Visitor\Sitecore.Ecommerce.Visitor.csproj">
       <Project>{4DF44E9C-B080-4670-B471-BC44648651A7}</Project>
       <Name>Sitecore.Ecommerce.Visitor</Name>
     </ProjectReference>
-    <ProjectReference Include="layouts\Ecommerce\Sitecore.Ecommerce.Presentation.Tests\Sitecore.Ecommerce.Presentation.Tests.csproj">
-      <Project>{6C922B95-A5AC-40D5-A83F-827B0FC75554}</Project>
-      <Name>Sitecore.Ecommerce.Presentation.Tests</Name>
-    </ProjectReference>
     <ProjectReference Include="sitecore modules\Shell\Ecommerce\Services\Sitecore.Ecommerce.Services.csproj">
       <Project>{FE3E54B5-57EB-42A1-9A5E-7CB4B933ED84}</Project>
       <Name>Sitecore.Ecommerce.Services</Name>
-    </ProjectReference>
-    <ProjectReference Include="sitecore modules\Shell\Ecommerce\TServices\Sitecore.Ecommerce.Tests.QA.csproj">
-      <Project>{8EC7AB76-92EE-4335-A78A-DDDB164419A0}</Project>
-      <Name>Sitecore.Ecommerce.Tests.QA</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -657,10 +556,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Sitecore.Ecommerce.Examples.config" />
-    <Content Include="App_Config\Include\Sitecore.Ecommerce.Testing.config" />
-    <Content Include="App_Config\Include\Sitecore.Ecommerce.Apps.OrderManagement.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
@@ -689,11 +584,6 @@
     <Content Include="layouts\Ecommerce\Examples\Check Out Process\ThreeColumnContent.ascx" />
     <Content Include="layouts\Ecommerce\Examples\Check Out Process\TwoFormsContent.ascx" />
     <Content Include="layouts\Ecommerce\SampleLayoutPrint.aspx" />
-    <Content Include="sitecore\admin\tests\IntegrationalPayment\CreditCard.aspx" />
-    <Content Include="sitecore\admin\tests\IntegrationalPayment\UserInfo.aspx" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="xsl\Ecommerce\Examples\Check Out Process\CheckOutProcessHeader.xslt" />
   </ItemGroup>
   <ItemGroup>
@@ -726,5 +616,4 @@
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
-  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
 </Project>
